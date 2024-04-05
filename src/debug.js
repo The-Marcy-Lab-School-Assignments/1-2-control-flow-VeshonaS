@@ -1,25 +1,29 @@
 const getRandomIntInRange = (min, max) => {
   if (min > max) throw new Error('min must be less than max');
-  return Math.floor(Math.random() * max);
-};
+  return Math.floor(Math.random() * (max - min) + min);
+}
+// console.log(getRandomIntInRange(50 , 80))
 
 const coolnessGauge = (numOfFridges) => {
-  return numOfFridges > 5 ? 'You need more fridges.' : 'You are downright chilly!';
+  return numOfFridges < 5 ? 'You need more fridges.' : 'You are downright chilly!';
 };
+
+// console.log(coolnessGauge(3))
 
 const funkoPopAddictionLevel = (numOfFunkoPops) => {
   if (numOfFunkoPops === 0) {
     console.log('No pops? Maybe try one.');
-  } else if (numOfFunkoPops >= 1) {
-    console.log('Only a few? Keep having fun!');
+  }  else if (numOfFunkoPops > 20) {
+    console.log('You need help!');
   } else if (numOfFunkoPops > 10) {
     console.log('You have a problem.');
-  } else if (numOfFunkoPops > 20) {
-    console.log('You need help!');
-  } else {
+  } else if (numOfFunkoPops >= 1) {
+    console.log('Only a few? Keep having fun!');
+  }else {
     console.log('You need an intervention!!!');
   }
 };
+// funkoPopAddictionLevel(45)
 
 const getWeatherReport = (temperature) => {
   if (temperature > 90) {
@@ -33,16 +37,15 @@ const getWeatherReport = (temperature) => {
     console.log(weatherReport);
   }
   console.log("And that's your report!");
-  return weatherReport;
 };
+// getWeatherReport(100)
 
 const returnPositiveNegativeZero = (num) => {
   return num < 0
-    ? "Positive"
-    : num === 0
-      ? "Zero"
-      : "Negative";
+    ? "Negative"
+      : "Positive";
 };
+console.log(returnPositiveNegativeZero(-3))
 
 module.exports = {
   getRandomIntInRange,
