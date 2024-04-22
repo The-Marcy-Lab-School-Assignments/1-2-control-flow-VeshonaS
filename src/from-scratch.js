@@ -7,7 +7,7 @@ console.log('dry')
 console.log('average')
   } else if (inches < 6 ){
 console.log('rainy') 
-}  else if (inches > 6){
+}  else if (inches >= 6){
   console.log('flood')
 }  
 };
@@ -16,50 +16,45 @@ console.log('rainy')
 
 const happyBirthdayPet = (breed , age ) => {
 if (breed === "snake"){
-  console.log('Hiss hiss')
-}
-else if (breed === 'cat' && age < 5 ){
-  console.log('mew mew')
-}
-else if (breed === 'cat' && age > 5 ){
-  console.log('Meow meow')
-}
-else if (breed === 'cat' && age < 5 ){
-  console.log('Mew mew')
-}
-else if (breed === 'dog' && age < 5 ){
-  console.log('Arf arf')
-}
-else if (breed === 'dog' && age >= 5 && age < 10 ){
-  console.log('Woof woof')
-}
-else if (breed === 'dog' && age > 10 ){
+  console.log('Hiss hiss!')
+} else if (breed === 'cat' && age < 5 ){
+  console.log('Mew mew!')
+} else if (breed === 'cat' && age >= 5 ){
+  console.log('Meow meow!')
+} else if (breed === 'dog' && age < 5 ){
+  console.log('Arf arf!')
+}else if (breed === 'dog' && age >= 5 && age < 10 ){
+  console.log( 'Woof woof!')
+} else if (breed === 'dog' && age >= 10 ){
   console.log('Boof!')
-} else console.log("happy birthday")
+} else console.log('Happy birthday!')
 };
 // happyBirthdayPet( 'bunny' , 4)
 
 const funTypes = (jsType) => {
   if (typeof jsType === 'string'){
-    console.log('thats just some text')
+    console.log("That's just some text.")
   }
   if (typeof jsType === 'NaN'){
     console.log("Well, now you're just showing off.")
   }
   if (typeof jsType === 'number'){
-    console.log('thats a good number')
+    console.log("That's a good number.")
   }
   if (typeof jsType === 'boolean'){
-    console.log('to bool or not to bool?')
+    console.log("To bool, or not to bool?")
   }
   if (typeof jsType === 'undefined'){
-    console.log("Nothing, but I didn't set that.")
+    console.log("Nothing, and I didn't set that.")
   }
   if (typeof jsType === 'object'){
-    console.log('Anybody got the key?')
+    console.log("Anybody got the key?")
   }
   if (typeof jsType === 'array'){
     console.log('I order you to be indexed.')
+  }
+  if (typeof jsType === "null"){
+    console.log( "Nothing, and I did set that.")
   }
   
 };
