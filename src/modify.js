@@ -1,9 +1,9 @@
 const wildlyBiasedReview = (location) => {
-  if (location === 'NYC')console.log('THE GREATEST CITY IN THE WORLD');
-   if (location === 'NYC')console.log('THE CITY THAT NEVER SLEEPS');
-    if (location === 'NYC')console.log('WOW WHAT A CITY');
+  if (location === 'NYC') return ('THE GREATEST CITY IN THE WORLD');
+   if (location === 'NYC')return ('THE CITY THAT NEVER SLEEPS');
+    if (location === 'NYC')return ('WOW WHAT A CITY');
   else {
-    console.log('Yea that place is cool I guess');
+    return ('Yea that place is cool I guess');
   }
 };
 wildlyBiasedReview('NYC')

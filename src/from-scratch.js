@@ -41,11 +41,11 @@ const funTypes = (jsType) => {
   if (typeof jsType === 'number'){
     console.log("That's a good number.")
   }
+  if (typeof jsType === 'undefined'){
+    console.log("Nothing, but I didn't set that.")
+  }
   if (typeof jsType === 'boolean'){
     console.log("To bool, or not to bool?")
-  }
-  if (typeof jsType === 'undefined'){
-    console.log("Nothing, and I didn't set that.")
   }
   if (typeof jsType === 'object'){
     console.log("Anybody got the key?")
@@ -53,7 +53,7 @@ const funTypes = (jsType) => {
   if (typeof jsType === 'array'){
     console.log('I order you to be indexed.')
   }
-  if (typeof jsType === "null"){
+  if (typeof jsType === 'null'){
     console.log( "Nothing, and I did set that.")
   }
   

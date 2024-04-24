@@ -40,14 +40,14 @@
       "FrScTe5": 1
     },
     "Modify Tests": {
-      "MoTe1": 0,
+      "MoTe1": 1,
       "MoTe2": 0
     },
     "Debug Tests": {
       "DeTe1": 1,
-      "DeTe2": 0,
-      "DeTe3": 0,
-      "DeTe4": 0,
+      "DeTe2": 1,
+      "DeTe3": 1,
+      "DeTe4": 1,
       "DeTe5": 0,
       "DeTe6": 1,
       "DeTe7": 0
@@ -55,8 +55,8 @@
   },
   "humanReadable": {
     "From Scratch Tests": "4/5",
-    "finalTestScore": "FINAL SCORE: 6/14",
-    "Modify Tests": "0/2",
-    "Debug Tests": "2/7"
+    "finalTestScore": "FINAL SCORE: 10/14",
+    "Modify Tests": "1/2",
+    "Debug Tests": "5/7"
   }
 }

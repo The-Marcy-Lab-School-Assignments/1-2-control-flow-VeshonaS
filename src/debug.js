@@ -5,7 +5,7 @@ const getRandomIntInRange = (min, max) => {
 // console.log(getRandomIntInRange(50 , 80))
 
 const coolnessGauge = (numOfFridges) => {
-  return numOfFridges < 5 ? 'You need more fridges.' : 'You are downright chilly!';
+  return numOfFridges <= 3 ? 'You need more fridges.' : 'You are downright chilly!';
 };
 
 // console.log(coolnessGauge(3))
@@ -13,39 +13,40 @@ const coolnessGauge = (numOfFridges) => {
 const funkoPopAddictionLevel = (numOfFunkoPops) => {
   if (numOfFunkoPops === 0) {
     console.log('No pops? Maybe try one.');
-  }  else if (numOfFunkoPops > 20) {
-    console.log('You need help!');
-  } else if (numOfFunkoPops > 10) {
-    console.log('You have a problem.');
-  } else if (numOfFunkoPops >= 1) {
+  }  else if (numOfFunkoPops <= 10) {
     console.log('Only a few? Keep having fun!');
-  }else {
-    console.log('You need an intervention!!!');
+  } else if (numOfFunkoPops <= 20){
+    console.log('You have a problem.')
+  } else if (numOfFunkoPops <= 30){
+    console.log('You need help!')
+  } else {
+    console.log('You need an intervention!!!')
   }
 };
-// funkoPopAddictionLevel(45)
+// funkoPopAddictionLevel(19)
 
 const getWeatherReport = (temperature) => {
-  if (temperature > 90) {
-    const weatherReport = "It's hot and gross out.";
-    console.log(weatherReport);
-  } else if (temperature > 70) {
-    const weatherReport = "At least it's a dry heat.";
-    console.log(weatherReport);
-  } else if (temperature < 32) {
-    const weatherReport = "Wow, it's cold out.";
-    console.log(weatherReport);
+  if (temperature >= 100) {
+    let weatherReport = "It's hot and gross out.";
+   return (weatherReport);
+  } else if (temperature >= 71) {
+    let weatherReport = "At least it's a dry heat.";
+   return (weatherReport);
+  } else if (temperature >= 32) {
+    let weatherReport = "It's not too bad!";
+   return (weatherReport);
+  } else if (temperature <= 31){
+    let weatherReport = "Wow, it's cold out."
+    return (weatherReport)
   }
   console.log("And that's your report!");
 };
-// getWeatherReport(100)
+console.log(getWeatherReport(100))
 
 const returnPositiveNegativeZero = (num) => {
-  return num < 0
-    ? "Negative"
-      : "Positive";
+  return num < 0 ? "Negative" : "Positive";
 };
-console.log(returnPositiveNegativeZero(-3))
+// console.log(returnPositiveNegativeZero(-3))
 
 module.exports = {
   getRandomIntInRange,
