@@ -35,7 +35,7 @@ const funTypes = (jsType) => {
   if (typeof jsType === 'string'){
     console.log("That's just some text.")
   }
-  if (typeof jsType === 'NaN'){
+  if (isNaN(jsType)){
     console.log("Well, now you're just showing off.")
   }
   if (typeof jsType === 'number'){

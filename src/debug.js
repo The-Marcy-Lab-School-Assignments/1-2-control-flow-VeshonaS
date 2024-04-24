@@ -26,25 +26,32 @@ const funkoPopAddictionLevel = (numOfFunkoPops) => {
 // funkoPopAddictionLevel(19)
 
 const getWeatherReport = (temperature) => {
+  let weatherReport = ''
   if (temperature >= 100) {
-    let weatherReport = "It's hot and gross out.";
-   return (weatherReport);
+     weatherReport = "It's hot and gross out.";
+
   } else if (temperature >= 71) {
-    let weatherReport = "At least it's a dry heat.";
-   return (weatherReport);
+     weatherReport = "At least it's a dry heat.";
+
   } else if (temperature >= 32) {
-    let weatherReport = "It's not too bad!";
-   return (weatherReport);
+    weatherReport = "It's not too bad!";
+
   } else if (temperature <= 31){
-    let weatherReport = "Wow, it's cold out."
-    return (weatherReport)
+     weatherReport = "Wow, it's cold out."
+   
   }
+  console.log(weatherReport)
   console.log("And that's your report!");
+  return weatherReport
 };
-console.log(getWeatherReport(100))
+getWeatherReport(100)
 
 const returnPositiveNegativeZero = (num) => {
-  return num < 0 ? "Negative" : "Positive";
+  if (num < 0) {return "Negative"}
+  else if (num > 0){ return "Positive"}
+  else {
+    return "Zero"
+  }
 };
 // console.log(returnPositiveNegativeZero(-3))
 
